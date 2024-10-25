@@ -13,7 +13,7 @@ services:
   app-timesheet:
     depends_on:
       - nysqldb
-    image: imageTEST/timesheet-devops:1.0.0
+    image: nourobba/timesheet-devops:1.0.0
     restart: on-failure
     ports:
       - 8882:8082
