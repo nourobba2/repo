@@ -12,7 +12,7 @@ services:
       - db:/var/lib/mysql
   app-timesheet:
     depends_on:
-      - nysqldb
+      - mysqldb
     image: nourobba/timesheet-devops:1.0.0
     restart: on-failure
     ports:
